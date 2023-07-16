@@ -9,14 +9,19 @@ Results
 Data Processing:
 
 •	The target variable is the “IS_SUCCESSFUL” column which gives the result of whether the venture was successful or not.
+
 •	The Features of the model are variables ’APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS and ASK_AMT'
+
 •	The variables "EIN" and "NAME" were removed from the input data as these variables are neither targets nor features.
 
 Compiling, Training and Evaluating the Model:
 
 •	Initially a basic model with 2 layers with 32 and 16 neurons respectively was used with activation function of relu and output layer activation function of sigmoid.
+
 •	We were not able to achieve the target model performance of 85% with this model.
+
 •	keras-tuner library was used to find the best model and even evaluating the best model did not help in achieving our target model performance.
+
 •	The best model comprised of 11 neurons in the first layer and additional 5 layers with varying number of neurons in each layer and tanh activation function.
 
 Summary
