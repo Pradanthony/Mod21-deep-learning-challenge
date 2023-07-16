@@ -4,6 +4,7 @@ Overview of the analysis
 
 Alphabet Soup has provided funds to many organizations to help them succeed in their ventures. In this analysis we will be using the historical data from the funds provided in the past for many different ventures and their outcome to predict the outcome of the applicants ventures if funded by Alphabet Soup in the future. The analysis involved data processing, compiling a model, training and testing and evaluation of this model against the outcome. A deep learning model using neural networks was used to solve this classification problem. Our target performance evaluation is 85% accuracy.
 
+
 Results
 
 Data Processing:
@@ -14,6 +15,7 @@ Data Processing:
 
 •	The variables "EIN" and "NAME" were removed from the input data as these variables are neither targets nor features.
 
+
 Compiling, Training and Evaluating the Model:
 
 •	Initially a basic model with 2 layers with 32 and 16 neurons respectively was used with activation function of relu and output layer activation function of sigmoid.
@@ -23,6 +25,7 @@ Compiling, Training and Evaluating the Model:
 •	keras-tuner library was used to find the best model and even evaluating the best model did not help in achieving our target model performance.
 
 •	The best model comprised of 11 neurons in the first layer and additional 5 layers with varying number of neurons in each layer and tanh activation function.
+
 
 Summary
 
